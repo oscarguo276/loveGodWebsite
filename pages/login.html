@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>註冊會員</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vender/fontawesome-free/css/v5.8_all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/login/login.css" rel="stylesheet">
+    <link href="../css/index/styles.css" rel="stylesheet">
+    <link href="../css/login/loginCustom.css" rel="stylesheet">
+    <link href="../css/login/loginSwitch.css" rel="stylesheet">
+    <link href="../css/login/loveClick.css" rel="stylesheet">
+    <link href="../css/login/fontsNunito.css" rel="stylesheet">
+
+    <!-- 點擊愛心 只能使用網址 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<!-- 
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⢀⣀⡀⢿⣾⢇⠀⠀⠀⠀⠀⠀⠀⢈⠃⠀⠁⠀⢠⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣤⣴⣿⣿⣿⣿⣆⠀⣶⣆⣀⣠⣤⠀⣄⢨⡄⢶⣶⢶⣾⡁⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⢠⢤⣶⣾⣿⣿⣿⣿⠏⣻⠆⣶⡽⣿⣿⣿⣿⣿⣇⡟⢰⡟⣣⣧⣽⣿⣷⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠓⠛⣽⣿⣿⣿⣿⣿⣿⣿⣟⣥⣻⣶⣿⣿⣿⣿⣿⣿⣷⣾⣿⣿⣷⣻⣷⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠆⢰⠎⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡷⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠃⢚⣳⣿⣿⣿⣿⣿⣿⣿⣿⣿⣬⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡷⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡼⠀⠀⠀⠀⠀⠀⢨⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⢹⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⡛⠸⣟⣿⣿⣿⡕⠄⠙⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⢛⣓⣂⣉⣉⣉⣉⣉⡍⠻⢾⠆⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⠜⢿⣍⣏⠀⠀⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣭⣭⣛⡻⢿⣿⣟⡟⠀⠘⣿⣯⠲⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣾⠏⠁⠀⠀⠀⠈⠉⠙⠻⣿⣿⣿⣿⣿⣿⠟⠋⠉⠉⢉⣉⣉⣉⡙⢿⣮⣿⠷⣠⢱⣿⣏⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⣿⠀⠴⠚⠉⡉⠀⠤⢄⠀⠙⣿⣿⣿⣿⣿⣿⡶⡚⠉⠙⠻⠿⡿⢿⣶⣿⣿⣷⣆⠪⢎⣻⠇⠃⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠸⣿⣇⡁⠀⠸⣿⣄⣡⣾⣕⡄⢸⣿⣿⣿⣿⣿⣮⣶⣿⣄⣁⣶⣌⣘⣿⣿⣿⣿⣿⣷⠈⠛⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣧⣈⣻⣿⣿⣿⣿⡄⢸⣿⣿⣿⣿⣿⣿⣝⣛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣤⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢈⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⡿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠹⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢸⡛⢛⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⡙⠛⢿⣿⣿⣿⣿⣟⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢰⣿⣿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡽⢿⣿⣿⣿⣿⣄⣀⣙⣛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⢸⣿⡿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⣛⣿⣿⣿⣿⣿⣿⣿⠃⠀⣸⣿⡇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠛⠛⠛⠛⠻⠛⠛⣛⣛⣫⣭⣶⣶⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⢀⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣔⠾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⠏⠀⠀⣠⣾⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣈⠉⠛⠛⠛⣛⣿⣿⣿⣿⣿⣿⣿⣿⠳⠊⠀⢠⣾⣿⣿⢣⣄⠀⠀⣠⣶⣷⣶⣦⣄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣷⣄⣀⣴⣿⣿⣿⣿⣿⣿⣿⠟⠋⠐⢀⣴⣿⣿⣿⣯⣾⣿⣦⣾⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠛⠛⠻⣿⣿⣿⣿⣿⣿⣿⠛⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠿⠿⠟⠋⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡗⣵⣿⣿⣿⣿⣿⣿⣿⠉⠈⣿⣿⣿⣿⣿⣿
+⠀⠀香蕉君保佑  永無BUG⠀⠀⠀           ⢠⡾⠋⠹⢿⣿⣿⣿⣿⡟⠀⠀⠸⣿⣿⣿⣿⣿ -->
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+                <!-- 切換部分的卡片 -->
+                <div class="row" style="margin-bottom: -2.5rem; padding-top: -2rem">
+                    <div class="col-lg-3"></div>
+                    <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6">
+                        <div class="card-body p-0">
+                            <!-- Nested Row within Card Body -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="pt-0 pb-0 pl-5 pr-5">
+                                        <div class="h2 text-center font2">
+                                            <span>註冊 / 登入</span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-0 pb-0 pl-5 pr-5">
+                                        <div class="text-center">
+                                            <button class="shadow btn btn-switchColor btn-block btn-lg font2"
+                                                onclick="switchCard()">
+                                                切 換
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <!-- 顯示部分的卡片 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <!-- <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6"> -->
+                                <!-- <div class="card-body p-0"> -->
+                                <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6">
+                                    <div class="card-body p-0">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="row">
+
+                                            <div class="col-lg-12">
+                                                <div class="p-5">
+                                                    <div class="text-center">
+                                                        <h1 class="h2 text-gray-900 mb-4 font">您好，歡迎訪問歸心寺</h1>
+                                                    </div>
+                                                    <form class="user" action="login.java" method="post">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control form-control-lg"
+                                                                placeholder="請輸入帳號..." minlength="6" maxlength="12"
+                                                                pattern="[a-zA-Z0-9]{6,12}"
+                                                                title="（請最少輸入 6 - 12 位英文與數字）" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control form-control-lg"
+                                                                placeholder="請輸入密碼..." minlength="6" maxlength="12"
+                                                                pattern="[a-zA-Z0-9]{6,12}"
+                                                                title="（請最少輸入 6 - 12 位英文與數字）" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="custom-control custom-checkbox small">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="customCheck">
+                                                                <!-- <label class="custom-control-label" for="customCheck">記住我</label> -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- <hr> -->
+                                                        <button class="shadow btn btn-loginColor btn-block btn-lg font2"
+                                                            submit="submit"> 登 入 </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3"></div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <!-- <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6"> -->
+                                <!-- <div class="card-body p-0"> -->
+                                <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6">
+                                    <div class="card-body p-0">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="p-5">
+                                                    <div class="text-center">
+                                                        <h1 class="h2 text-gray-900 mb-4 font">註冊會員</h1>
+                                                    </div>
+                                                    <form class="user" action="regitser.java" method="post">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control form-control-lg"
+                                                                placeholder="請輸入帳號..." minlength="6" maxlength="12"
+                                                                pattern="[a-zA-Z0-9]{6,12}"
+                                                                title="（請最少輸入 6 - 12 位英文與數字）" required>
+                                                            <span>（請最少輸入 6 - 12 位英文與數字）</span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control form-control-lg"
+                                                                placeholder="請輸入密碼..." minlength="6" maxlength="12"
+                                                                pattern="[a-zA-Z0-9]{6,12}"
+                                                                title="（請最少輸入 6 - 12 位英文與數字）" required>
+                                                            <span>（請最少輸入 6 - 12 位英文與數字）</span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="custom-control custom-checkbox small">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="customCheck">
+                                                            </div>
+                                                        </div>
+                                                        <button class="shadow btn btn-loginColor btn-block btn-lg font"
+                                                            submit="submit"> 註 冊 </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- LIKE 愛心特效 -->
+    <div class="middle" style="display: none;">
+        <div class="content-wrap middle">
+            <div class="like-wrap middle"><i class="fas fa-heart"></i><span>Like</span></div>
+        </div>
+    </div>
+
+    <script>
+        function switchCard() {
+            var flipCardTrans = document.getElementsByClassName("flip-card-inner")[0].style.transform;
+            if (flipCardTrans != 'rotateY(180deg)') {
+                // document.getElementsByClassName("flip-card")[0].style.transform = 'rotateY(180deg)';
+                document.getElementsByClassName("flip-card-inner")[0].style.transform = 'rotateY(180deg)';
+
+                document.getElementsByClassName("flip-card")[0].style.transition = 'transform 3000ms';
+                document.getElementsByClassName("flip-card-inner")[0].style.transition = 'transform 3000ms';
+
+                // document.getElementsByClassName('flip-card-front')[0].style.display = 'none';
+                // document.getElementsByClassName('flip-card-back')[0].style.display = 'inline';
+            } else {
+                // document.getElementsByClassName("flip-card")[0].style.transform = '';
+                document.getElementsByClassName("flip-card-inner")[0].style.transform = '';
+
+                document.getElementsByClassName("flip-card")[0].style.transition = 'transform 3000ms';
+                document.getElementsByClassName("flip-card-inner")[0].style.transition = 'transform 3000ms';
+
+                // document.getElementsByClassName('flip-card-back')[0].style.display = 'none';
+                // document.getElementsByClassName('flip-card-front')[0].style.display = 'inline';
+            }
+        }
+
+
+
+        // ---------  點擊愛心特效 --------  //
+        (function (w, d) {
+            d.querySelector('div').addEventListener('click', function (e) {
+                addLike(e);
+            });
+            d.querySelector('.like-wrap').addEventListener('click', function (e) {
+                this.classList.toggle('like-active');
+                addLike(e);
+            });
+            d.querySelector('.content-wrap').addEventListener('click', function (e) {
+                addLike(e);
+            });
+
+            var likeArr = [];   //like队列
+            function addLike(e) {
+                var likeDiv = d.createElement('div');   //创建div
+                likeDiv.classList.add('like');          //添加样式like
+                likeDiv.innerHTML = '<i class="fas fa-heart"></i><span>+666666</span>';   //添加like内容
+                d.body.appendChild(likeDiv);            //往body添加该div
+                // 每点击一次往队列添加一个like的对象
+                likeArr.push({
+                    el: likeDiv,            //div源
+                    top: e.clientY - 20,    //e为传入的点击事件，client取得点击位置像素
+                    left: e.clientX - 10,
+                    opacity: 1,             //透明度
+                    scale: 1,               //放大倍数
+                    color: `rgb(${255 * Math.random()},${255 * Math.random()},${255 * Math.random()})`
+                    //随机颜色，``反单引号为ES6写法，${}插入变量，也可用使用字符串拼接
+                });
+                moveLike();
+            };
+
+            function moveLike() {
+                for (var i = 0; i < likeArr.length; i++) {
+                    if (likeArr[i].opacity <= 0) {          //透明小于0时
+                        d.body.removeChild(likeArr[i].el);  //body去除like
+                        likeArr.splice(i, 1);               //队列删减
+                        return;                             //跳出moveLike函数
+                    }
+                    likeArr[i].top--;                     //刷新一次top-1
+                    likeArr[i].opacity -= 0.01;           //透明度操作,根据喜好自定义
+                    likeArr[i].scale += 0.01;             //放大倍数操作，根据喜好自定义
+                    // 往div源添加style样式，``同样是ES6写法
+                    likeArr[i].el.style.cssText = `
+                            top: ${likeArr[i].top}px;
+                            left: ${likeArr[i].left}px;
+                            color: ${likeArr[i].color};
+                            opacity: ${likeArr[i].opacity};
+                            transform: scale(${likeArr[i].scale});`
+                }
+                //请求动画帧，以屏幕刷新为准，一般是每秒60帧，每刷新调用一次moveLike
+                w.requestAnimationFrame(moveLike);
+            }
+
+        })(window, document);
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+    </script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vender/jquery/jquery.min.js"></script>
+    <script src="../vender/bootstrap/4.6.0/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vender/jquery-easing/jquery.easing.min.js"></script>
+    <!-- JavaScript-->
+    <!-- <script src="js/login/loveClick.js"></script> -->
+
+    <!-- Custom scripts for all pages-->
+    <!-- <script src="js/login.js"></script> -->
+
+
+</html>
