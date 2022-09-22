@@ -1,13 +1,23 @@
 /* 背景 */
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  /* padding-bottom: calc(10rem - 4.5rem);  */
+  padding-bottom: calc(30rem - 4.5rem);
   background: url("../../image/index/bg-masthead.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  width: auto;
+}
+
+.backgroundImge {
+  padding-top: 10rem;
+  background: url("../../image/index/bg-masthead.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 /* 首頁置中logo圖 */
@@ -26,36 +36,6 @@ header.masthead {
   background: rgba(0, 0, 0, 0);
 }
 
-
-/* 各頁面導航欄位 */
-#mainNav .navbar-nav .nav-item .nav-link {
-  color: black;
-  font-family: masafont-Regular;
-  /* "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-weight: 900;
-  font-size: 2vw;
-  padding: 0rem;
-  margin: auto 2vw;
-}
-
-/* 導航欄背景 */
-#mainNav {
-  background-image: url(../../image/index/bar.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  width: auto;
-}
-
-.barimg {
-  position: fixed;
-  left: 2px;
-  top: 2px;
-  max-width: 30%;
-  max-height: 100%;
-}
-
 /* 首頁導航欄 */
 #indexmainNav .navbar-nav .nav-item .nav-link {
   color: black;
@@ -63,9 +43,9 @@ header.masthead {
   /* "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   /* 字體粗度 */
   font-weight: 900;
-  font-size: 2vw;
+  font-size: 210%;
   padding: 0rem;
-  margin: auto 5vw;
+  margin: auto 4vw;
 }
 
 #indexmainNav {
@@ -76,6 +56,33 @@ header.masthead {
   background-size: cover;
   width: auto;
 
+}
+
+/* 各頁面導航欄位 */
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: black;
+  font-family: masafont-Regular;
+  /* "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-weight: 900;
+  font-size: 210%;
+  margin: 0px;
+}
+
+/* 導航欄背景 */
+#mainNav {
+  background-image: url(../../image/index/bar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: auto;
+
+}
+
+/* 左上logo返回首頁 */
+.barimg {
+  width: 9rem;
+  height: auto;
 }
 
 #login,
