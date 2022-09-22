@@ -11,7 +11,7 @@ header.masthead {
 }
 
 .backgroundImge {
-  padding-top: 10rem;
+  padding-top: 9rem;
   background: url("../../image/index/bg-masthead.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -19,6 +19,22 @@ header.masthead {
   background-attachment: fixed;
 
 }
+
+/* 監聽到滑鼠移到bar要變甚麼顏色 */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #495057;
+  border-color: #495057;
+  font-size: 220%;
+
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #1a5086;
+  font-size: 220%;
+}
+
 
 /* 首頁置中logo圖 */
 .imgcenter {
