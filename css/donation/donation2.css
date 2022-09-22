@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 標準 */
+}
+
+p,h2{
+    font-family:serif; 
+}
+
 #code { 
     cursor: pointer;
     font-family:Arial; 
@@ -6,11 +17,13 @@
     border:0; 
     letter-spacing:10px; 
     color:blue;
-    background-color: red;
+    background-color: aqua;
     padding:4px;
     width:100px;
-    height:20px;
+    height:30px;
     text-align:center;
+    pointer-events: none; 
+    /* 讓他直接點到後面 */
   } 
   #recode{
     cursor: pointer;
