@@ -1,0 +1,17 @@
+.title{
+    font-family:serif;
+}
+
+#Payment1 {
+    border: 3px solid red;
+    background-color:green;
+    color: black;
+    padding: 10px 120px 10px 120px;
+    
+}
+#Payment2 {
+    height:50px;
+    width: 50%;
+}
+
+
