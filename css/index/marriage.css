@@ -7,17 +7,31 @@
     background-size: cover;
     background-attachment: fixed;
 
+
+
 }
 
-.row {
-    --bs-gutter-x: 1.0rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
-    margin-left: calc(-0.5 * var(--bs-gutter-x));
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
+.centertext {
+    width: 200px;
+    height: 100px;
+    background: white;
+    animation: fadein 6s ease;
+}
+
 
 /* 圖片外框 */
 .drawBig {
@@ -50,10 +64,7 @@
     z-index: 0;
     left: 0px;
     top: 10%;
-}
 
-#s {
-    margin: 0%;
 }
 
 /* 姻緣籤詩 */
@@ -83,15 +94,8 @@ h1 {
     position: absolute;
     color: rgb(0, 0, 0);
     font-size: 2vw;
+
     top: 33%;
     left: 0%;
-
-}
-
-.draw {
-    width: 20%;
-    height: auto;
-    padding: 0%;
-
 
 }
