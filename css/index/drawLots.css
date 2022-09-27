@@ -9,6 +9,48 @@
 
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.inZoom {
+
+    animation: fadein 15s ease;
+    margin: 0%;
+    padding: 0%;
+}
+
+.outZoom {
+
+    animation: fadeout 15s ease;
+    margin: 0%;
+    padding: 0%;
+}
+
 .row {
     --bs-gutter-x: 1.0rem;
     --bs-gutter-y: 0;
@@ -46,7 +88,6 @@
     color: rgb(0, 0, 0);
     width: 100%;
     max-height: 100%;
-    font-size: large;
     z-index: 0;
     left: 0px;
     top: 10%;
@@ -54,6 +95,7 @@
 
 #s {
     margin: 0%;
+    font-size: xx-large;
 }
 
 /* 姻緣籤詩 */

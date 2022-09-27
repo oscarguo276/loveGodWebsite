@@ -21,15 +21,36 @@
     }
 
     100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 0;
     }
 }
 
-.centertext {
-    width: 200px;
-    height: 100px;
-    background: white;
-    animation: fadein 6s ease;
+.inZoom {
+
+    animation: fadein 15s ease;
+    margin: 0%;
+    padding: 0%;
+}
+
+.outZoom {
+
+    animation: fadeout 15s ease;
+    margin: 0%;
+    padding: 0%;
 }
 
 
