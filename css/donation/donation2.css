@@ -1,95 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* 標準 */
-}
-
 #code { 
-    cursor: pointer;
-    font-family:Arial; 
-    font-style:italic; 
-    font-weight:bold; 
-    border:0; 
-    letter-spacing:10px; 
-    color:blue;
-    background-color: aqua;
-    padding:4px;
-    width:100px;
-    height:30px;
-    text-align:center;
-    pointer-events: none; 
-    /* 讓他直接點到後面 */
-  } 
-  /* #recode{
-    cursor: pointer;
-    font-size:10px;
-  } */
+  cursor: pointer;
+  font-family:Arial; 
+  font-style:italic; 
+  font-weight:bold; 
+  border:0; 
+  letter-spacing:10px; 
+  color:blue;
+  background-color: aqua;
+  padding:4px;
+  width:100px;
+  height:30px;
+  text-align:center;
+  pointer-events: none;
+  /* 讓他直接點到後面 */
+} 
 
-  .title{
-    font-family:serif;
+.form-folat_mb3{
+  text-align:center;
 }
 
-/* #form-folat_mb2{
-    margin:0px auto;
-    width:300px;
-    height:200px;
-    border:5px #FFAC55 solid;
-    padding:10px;
-  } */
+.form-folat_mb3 #validate:active{
+transform: scale(0.95,0.95);
+}
 
-  h5{
-    font-size: 1.2rem;
-  }
+.form-folat_mb3 #validate{
+  margin: 0.4rem ;
+  padding: 0.3rem 0.7rem;
+  background-color: aqua;
+  border: 1px solid #fff;
+  outline: none;
+}
 
-  p{
-    font-size: 1rem;
-  }
-  
-  a{
-    color: black;
-    text-decoration: none;
-  }
-
-  .all_border{
-    font-family: serif;
-    background: darkgray;
-    /* 彈性布局 */
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-  .choose_border form{
-    background:green;
-    display: flex;
-    flex-direction: column;
-    padding: 0 1.8rem;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .choose_border a{
-   
-    background-color: aquamarine;
-    width: 40%;
-    height: 4%;
-  }
-  .choose_border input{
-    background-color: aqua;
-    width: 40%;
-    border: 1px solid white;
-  }
-  .choose_border{
-    position: absolute;
-    top: 0;
-    right: 50%;
-    height: 100%;
-    
-  }
-  
