@@ -2,80 +2,269 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>歸心寺</title>
-    <!-- Favicon-->
-    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
-    <!-- Bootstrap Icons-->
-    <link href="../font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="../font/Merriweather+Sans.css" rel="stylesheet" />
-    <link href="../font/Merriweather.css" rel="stylesheet" type="text/css" />
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="../css/index/plugin/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../css/index/styles.css" rel="stylesheet" />
-    <!-- Custom -->
-    <link href="../css/index/customIndex.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>歸心寺</title>
+  <!-- Favicon-->
+  <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+  <!-- Bootstrap Icons-->
+  <link href="../font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="../font/Merriweather+Sans.css" rel="stylesheet" />
+  <link href="../font/Merriweather.css" rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="../css/index/plugin/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="../css/index/styles.css" rel="stylesheet" />
+  <!-- Custom -->
+  <link href="../css/index/customIndex.css" rel="stylesheet" />
+
+
+  <!--	一樣的標籤名稱-->
+  <!-- <link rel="stylesheet" href="../css/shopCss/bootstrap.min.css"> -->
+
+  <style>
+    .badge-notify {
+      border: 1px solid red;
+      border-radius: 50%;
+
+      background: red;
+      position: relative;
+      top: -20px;
+      right: -50px;
+    }
+
+    .my-cart-icon-affix {
+      z-index: 999;
+    }
+  </style>
 
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-0" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="../index.html"><img class="barimg" src="../image/index/logo.png"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="../pages/donation.html">香油錢</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/drawLots.html">求籤</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/marriage.html">求姻緣</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/shop.html">線上商城</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../pages/about.html">關於月老</a></li>
-                </ul>
-            </div>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-0" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="../index.html"><img class="barimg" src="../image/index/logo.png"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../pages/donation.html">香油錢</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/drawLots.html">求籤</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/marriage.html">求姻緣</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/shop.html">線上商城</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/about.html">關於月老</a></li>
+
+        </ul>
+        <!-- 購物車 連接到js-->
+        <div style="cursor: pointer">
+          <span class="glyphicon glyphicon-shopping-cart my-cart-icon badge badge-notify my-cart-badge"></span>
+          <!-- 購物車小圖 -->
+          <i class="fa-sharp fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
         </div>
-    </nav>
-    <!-- Masthead-->
-    <!-- <header class="masthead"> -->
-    <div class="backgroundImge">
-        <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-8 align-self-end imgSize">
-                    <img class="imgcenter" src="../image/index/indexCenter.png">
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5">郎才佳人聚於此，情云初話結親誼，
-                        月老有意線相牽，更在相情把機會。</p>
-                    <a class="btn btn-primary btn-xl" href="#about">登入/登出</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <!-- </header> -->
-    <!-- Footer-->
-    <footer class="bg-light py-1">
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div>
+    </div>
+    </div>
+  </nav>
+
+
+  <!-- Masthead-->
+  <!-- <header class="masthead"> -->
+  <div class="backgroundImge">
+    <div class="container px-4 px-lg-5 h-100">
+
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img src="../image/index/shop/img_1.png" height="200px">
+          <br>
+          姻緣紅線 - <strong>$250</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="1" data-name="姻緣紅線" data-summary="summary 1"
+            data-price="350" data-quantity="1" data-image="../image/index/shop/img_1.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
         </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="../vender/bootstrap/5.1.3/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="../js/index/plugin/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="../js/index/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- <script src="./js/index/sb-forms-latest.js"></script> -->
+
+        <div class="col-md-3 text-center">
+          <img src="../image/index/shop/img_2.png" height="200px">
+          <br>歸心平安符 - <strong>$150</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="2" data-name="歸心平安符" data-summary="summary 2"
+            data-price="650" data-quantity="1" data-image="../image/index/shop/img_2.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <img src="../image/index/shop/img_3.png" width="200px" height="200px">
+          <br>
+          供品組合 - <strong>$500</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="3" data-name="供品組合" data-summary="summary 3"
+            data-price="500" data-quantity="1" data-image="../image/index/shop/img_3.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <img src="../image/index/shop/img_4.jpg" width="200px" height="200px">
+          <br>祈福燈 - <strong>$600</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="4" data-name="祈福燈" data-summary="summary 4"
+            data-price="120" data-quantity="1" data-image="../image/index/shop/img_4.jpg">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center" style="margin-top: 40px;">
+          <img src="../image/index/shop/img_5.png" height="200px">
+          <br>
+          戀愛御守 - <strong>$150</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="5" data-name="戀愛御守" data-summary="summary 5"
+            data-price="150" data-quantity="1" data-image="../image/index/shop/img_5.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center" style="margin-top: 40px;">
+          <img src="../image/index/shop/img_6.png">
+          <br>
+          歸心漁夫帽 - <strong>$550</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="6" data-name="歸心漁夫帽" data-summary="summary 6"
+            data-price="550" data-quantity="1" data-image="../image/index/shop/img_6.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center" style="margin-top: 40px;">
+          <img src="../image/index/shop/img_7.png" height="200px">
+          <br>
+          大筆進財 - <strong>$350</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="7" data-name="大筆進財" data-summary="summary 7"
+            data-price="350" data-quantity="1" data-image="../image/index/shop/img_7.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center" style="margin-top: 40px;">
+          <img src="../image/index/shop/img_7.png" height="200px">
+          <br>
+          大筆進財 - <strong>$350</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="8" data-name="大筆進財" data-summary="summary 8"
+            data-price="350" data-quantity="1" data-image="../image/index/shop/img_7.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+        <div class="col-md-3 text-center" style="margin-top: 40px;">
+          <img src="../image/index/shop/img_7.png" height="200px">
+          <br>
+          大筆進財 - <strong>$350</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="9" data-name="大筆進財" data-summary="summary 9"
+            data-price="350" data-quantity="1" data-image="../image/index/shop/img_7.png">加入購物車</button>
+          <a href="#" class="btn btn-info">查看商品</a>
+        </div>
+
+
+
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 mb-5">郎才佳人聚於此，情云初話結親誼，
+            月老有意線相牽，更在相情把機會。</p>
+          <a class="btn btn-primary btn-xl" href="#about">登入/登出</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- </header> -->
+  <!-- Footer-->
+  <footer class="bg-light py-1">
+    <div class="container px-4 px-lg-5">
+      <div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="../vender/bootstrap/5.1.3/bootstrap.bundle.min.js"></script>
+  <!-- SimpleLightbox plugin JS-->
+  <script src="../js/index/plugin/simpleLightbox.min.js"></script>
+
+  <!-- Core theme JS-->
+  <script src="../js/index/scripts.js"></script>
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!--shop js-->
+  <script src="../js/index/shop/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="../js/index/shop/bootstrap.min.js"></script>
+  <script type='text/javascript' src="../js/index/shop/jquery.mycart.js"></script>
+  <script type="text/javascript">
+
+    $(function () {
+
+      var goToCartIcon = function ($addTocartBtn) {
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        //物品丟入購物車的路線
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 550, "linear", function () {
+          $image.remove();
+        });
+      }
+
+      // 購物車內物品
+      $('.my-cart-btn').myCart({
+        currencySymbol: '$',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+        cartItems: [
+          //{ id: 1, name: '姻緣紅線', summary: 'summary 1', price: 250, quantity: 1, image: '../image/index/shop/img_1.png' },
+          //{ id: 2, name: '歸心平安符', summary: 'summary 2', price: 150, quantity: 1, image: '../image/index/shop/img_2.png' },
+          //   { id: 3, name: 'product 3', summary: 'summary 3', price: 30, quantity: 1, image: 'shop/images/img_3.png' }
+        ],
+        clickOnAddToCart: function ($addTocart) {
+          goToCartIcon($addTocart);
+        },
+        afterAddOnCart: function (products, totalPrice, totalQuantity) {
+          //console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        },
+        clickOnCartIcon: function ($cartIcon, products, totalPrice, totalQuantity) {
+          //console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        },
+        checkoutCart: function (products, totalPrice, totalQuantity) {
+          var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+          checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+          $.each(products, function () {
+            checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+          });
+          alert(checkoutString)
+          //console.log("checking out", products, totalPrice, totalQuantity);
+        },
+        getDiscountPrice: function (products, totalPrice, totalQuantity) {
+          // console.log("calculating discount11111", products, totalPrice, totalQuantity);
+          return totalPrice;
+        }
+      });
+
+      $("#addNewProduct").click(function (event) {
+        var currentElementNo = $(".row").children().length + 1;
+        $(".row").append('<div class="col-md-3 text-center"><img src="../image/index/shop/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="../image/index/shop/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+      });
+    });
+  </script>
+
+
 </body>
+
 
 </html>
