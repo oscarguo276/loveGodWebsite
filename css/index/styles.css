@@ -3419,8 +3419,8 @@ fieldset:disabled .btn {
 
 .btn-info {
   color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  background-color: #FFCCCC;
+  border-color: #FFCCCC;
 }
 
 .btn-info:hover {
@@ -3509,8 +3509,8 @@ fieldset:disabled .btn {
 
 .btn-danger {
   color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #CC6600;
+  border-color: #FFCC00;
 }
 
 .btn-danger:hover {
