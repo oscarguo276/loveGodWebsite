@@ -1,4 +1,4 @@
-
+/*  翻轉卡片 */
 .flip-card {
   background-color: transparent;
   /*width: 300px;*/
@@ -21,7 +21,8 @@
   /*transition: transform 3000ms;*/
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -29,8 +30,7 @@
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-}
+.flip-card-front {}
 
 .flip-card-back {
   transform: rotateY(180deg);

@@ -37,3 +37,20 @@
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
+/* 註冊會員 */
+
+.tableText {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: masafont-Regular;
+  /* font-weight: 500; */
+  line-height: 1.2;
+  font-size: 30px;
+  /* text-align-last: left; */
+  /* float: left; */
+}
+
+.table {
+  padding-right: 20px;
+}

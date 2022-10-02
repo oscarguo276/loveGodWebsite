@@ -89,13 +89,10 @@ by 清樺
                                     </div>
                                     <div class="pt-0 pb-0 pl-5 pr-5">
                                         <div class="text-center">
-                                            <!-- <button class="shadow btn btn-switchColor btn-block btn-lg font2"
+                                            <button class="shadow btn btn-switchColor btn-block btn-lg font2"
                                                 onclick="switchCard()">
                                                 切 換
-                                            </button> -->
-                                            <a href="./register.html"
-                                                class="shadow btn btn-switchColor btn-block btn-lg font2"
-                                                target="_self">切 換</a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -136,9 +133,9 @@ by 清樺
                                                                 pattern="[a-zA-Z0-9]{6,12}"
                                                                 title="（請最少輸入 6 - 12 位英文與數字）" required>
                                                         </div>
-                                                        <!-- <div class="form-group">
+                                                        <div class="form-group">
                                                             <a href="" class="row">忘記密碼</a>
-                                                        </div> -->
+                                                        </div>
                                                         <!-- <hr> -->
                                                         <button class="shadow btn btn-loginColor btn-block btn-lg font2"
                                                             submit="submit"> 登 入 </button>
@@ -150,6 +147,142 @@ by 清樺
                                 </div>
                                 <div class="col-lg-3"></div>
                             </div>
+                        </div>
+                        <!-- <div class="flip-card-back" style="visibility:hidden"> -->
+                        <div class="flip-card-back">
+                            <form class="user" action="regitser.java" method="post">
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <!-- <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6"> -->
+                                    <!-- <div class="card-body p-0"> -->
+                                    <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6">
+                                        <div class="card-body p-0">
+                                            <!-- Nested Row within Card Body -->
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="p-5">
+                                                        <div class="text-center">
+                                                            <h1 class="h2 text-gray-900 mb-4 font">註冊會員</h1>
+                                                        </div>
+
+                                                        <!-- 註冊帳號 -->
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control form-control-lg"
+                                                                placeholder="請輸入帳號..." minlength="6" maxlength="12"
+                                                                pattern="[a-zA-Z0-9]{6,12}"
+                                                                title="（請最少輸入 6 - 12 位英文與數字）" required>
+                                                            <span>（請最少輸入 6 - 12 位英文與數字）</span>
+                                                        </div>
+                                                        <!-- 註冊密碼 -->
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control form-control-lg"
+                                                                placeholder="請輸入密碼..." minlength="6" maxlength="12"
+                                                                pattern="[a-zA-Z0-9]{6,12}"
+                                                                title="（請最少輸入 6 - 12 位英文與數字）" required>
+                                                            <span>（請最少輸入 6 - 12 位英文與數字）</span>
+                                                        </div>
+
+                                                        <!-- 註冊姓名 -->
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control form-control-lg"
+                                                                placeholder="請輸入您的姓名..." required>
+                                                        </div>
+
+
+
+                                                        <!-- 註冊性別 -->
+                                                        <div class="form-check">
+                                                            <label for="">性別：</label>
+                                                            <input name="sex" type="radio" value=boy />男
+                                                            <input name="sex" type="radio" value=girl />女
+                                                        </div>
+
+                                                        <!-- 註冊生日 -->
+                                                        <div class="form-group">
+                                                            <label for="">生日：</label>
+                                                            <input type="date" name="birth" id="" required>
+                                                        </div>
+
+                                                        <!-- 註冊地址 -->
+                                                        <div class="form-group">
+                                                            <label for="">地址：</label>
+                                                            <input type="text" name="address" size="30">
+                                                        </div>
+
+
+                                                        <!-- 註冊手機 -->
+                                                        <div class="form-group">
+                                                            <label for="" minlength="10" maxlength="11"
+                                                                pattern="/^09\d{2}-?\d{3}-?\d{3}$/">手機號碼：</label>
+                                                            <input type="tel" name="phone" size="30">
+                                                        </div>
+
+
+
+                                                        <!-- 註冊信箱 -->
+                                                        <div class="form-group">
+                                                            <label for="">E-mail：</label>
+                                                            <input type="email" name="mail1" id="">
+                                                        </div>
+
+
+                                                        <h1>開啟姻緣功能：
+                                                            <input type="checkbox"
+                                                                onclick="openShutManager(this,'data',false,'内容')"></input>
+                                                        </h1>
+
+                                                        <div id="data" style="display:none;">
+                                                            <!-- <span>我是隐藏的内容</span> -->
+                                                            <div class="form-check">
+                                                                <h3>簽名欄：</h3>
+                                                                <textarea name="comment" id="comment1" cols="40"
+                                                                    rows="5" style="resize: none;"></textarea>
+                                                                <br>
+                                                            </div>
+
+                                                            <fieldset>
+                                                                <legend>
+                                                                    <h3>聯絡方式三擇一：</h3>
+                                                                </legend>
+                                                                <div>
+                                                                    <input type="radio" id="huey" name="drone"
+                                                                        value="huey" checked>
+                                                                    <label for="huey">Facebook：<input type="text"
+                                                                            name="contact" id=""></label>
+                                                                </div>
+                                                                <div>
+                                                                    <input type="radio" id="dewey" name="drone"
+                                                                        value="dewey">
+                                                                    <label for="dewey">LINE：<input type="text"
+                                                                            name="contact" id=""></label>
+                                                                </div>
+                                                                <div>
+                                                                    <input type="radio" id="louie" name="drone"
+                                                                        value="louie">
+                                                                    <label for="louie">IG：<input type="text"
+                                                                            name="contact" id=""></label>
+                                                                </div>
+                                                            </fieldset>
+
+                                                        </div>
+
+
+                                                        <div class="form-group">
+                                                            <div class="custom-control custom-checkbox small">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="customCheck">
+                                                            </div>
+                                                        </div>
+                                                        <button class="shadow btn btn-loginColor btn-block btn-lg font"
+                                                            submit="submit"> 註 冊 </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -266,6 +399,5 @@ by 清樺
     <!-- Custom scripts for all pages-->
     <!-- <script src="js/login.js"></script> -->
 
-</body>
 
 </html>
