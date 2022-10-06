@@ -47,7 +47,7 @@
     <header class="masthead">
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                
+
                 <div class="all_border" id="all_border">
                     <div class="choose_border sign-in-container">
                         <form action="#">
@@ -55,13 +55,14 @@
                             <span class="title">歸心寺為信眾設置線上付款添油香，讓您不管在哪裡都可以表達對神明的感謝</span>
                             <span class="title">請選擇付款方式:</span>
                             <input type="button" id="Payment1" value="線上信用卡" name="check">
-                            <input type="button" id="Payment2" value="ATM匯款" data-bs-toggle="modol" data-bs-target="#lodinModal" name="check">
+                            <input type="button" id="Payment2" value="ATM匯款" data-bs-toggle="modal"
+                                data-bs-target="#lodinModal" name="check">
                         </form>
                     </div>
 
                     <div class="Payment_border">
                         <!-- 輸入香油錢資訊 -->
-                        <!-- <form class="donation_dataform_m1 sign-up-container" name="dataform">
+                        <form class="donation_dataform_m1 sign-up-container" name="dataform">
                             <span class="title">歸心寺為信眾設置線上付款添油香，讓您不管在哪裡都可以表達對神明的感謝</span>
                             <span class="title">請填寫以下資訊，以利寄發感謝狀!</span>
                             <div class="form-folat_mb1">
@@ -104,9 +105,9 @@
                                 <input type="button" value="驗證" id="validate">
                             </div>
                         </form>
-                    </div> -->
-                    <!-- 邊框內容 -->
-                    <!-- <div class="overlay_border">
+                    </div>
+                        <!-- 邊框內容 -->
+                        <div class="overlay_border">
                         <div class="overlay">
                             <div class="overlay_pannel overlay_left">
                                 <p class="ps">選擇</p>
@@ -119,25 +120,33 @@
                                 <button class="ghost" id="signUp">右邊</button>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
-                    <div class="modal fade" id="lodinModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>  
+                        <div class="modal fade popout" id="lodinModal">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <a>ATM匯款方式</a>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a>歸心寺因應諸多信眾建議，增設匯款帳戶，方便信眾添油香，表達對神明的敬意與想還願， 可以利用以下帳號，以轉帳匯款方式來支持：<br><br>
+                                            銀行名稱：台新銀行<br>
+                                            分行名稱：新北分行<br>
+                                            帳號：20311999217523<br>
+                                            戶名：歸心寺惜福帳戶<br><br>
+                                            如需感謝狀，請電話告知、郵寄或 Email:returntoheart@gmail.com，提供捐款人姓名、電話、住址、匯款帳號後五碼及匯款時間、金額，或是匯款影本。
+                                            核對資料及疫情趨緩後將統一寄出感謝狀。<br><br>
+                                            若有任何問題請洽 (06) 9993-2122 </a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button"  data-bs-dismiss="modal">關閉</button>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-
-                                </div>
-                                <div class="modal-body">
-                                    
-                                </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
     </header>
     <!-- Footer-->
     <footer class="bg-light py-1">
