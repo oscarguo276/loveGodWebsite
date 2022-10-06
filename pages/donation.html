@@ -54,14 +54,14 @@
                             <!-- 選擇付款方法 -->
                             <span class="title">歸心寺為信眾設置線上付款添油香，讓您不管在哪裡都可以表達對神明的感謝</span>
                             <span class="title">請選擇付款方式:</span>
-                            <a href="../../pages/donationtest/donation_test2.html" id="Payment1">線上信用卡</a>
-                            <input type="button" id="Payment2" value="ATM匯款" name="check">
+                            <input type="button" id="Payment1" value="線上信用卡" name="check">
+                            <input type="button" id="Payment2" value="ATM匯款" data-bs-toggle="modol" data-bs-target="#lodinModal" name="check">
                         </form>
                     </div>
 
                     <div class="Payment_border">
                         <!-- 輸入香油錢資訊 -->
-                        <form class="donation_dataform_m1 sign-up-container" name="dataform">
+                        <!-- <form class="donation_dataform_m1 sign-up-container" name="dataform">
                             <span class="title">歸心寺為信眾設置線上付款添油香，讓您不管在哪裡都可以表達對神明的感謝</span>
                             <span class="title">請填寫以下資訊，以利寄發感謝狀!</span>
                             <div class="form-folat_mb1">
@@ -104,9 +104,9 @@
                                 <input type="button" value="驗證" id="validate">
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                     <!-- 邊框內容 -->
-                    <div class="overlay_border">
+                    <!-- <div class="overlay_border">
                         <div class="overlay">
                             <div class="overlay_pannel overlay_left">
                                 <p class="ps">選擇</p>
@@ -119,10 +119,26 @@
                                 <button class="ghost" id="signUp">右邊</button>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="modal fade" id="lodinModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>  
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-body">
+                                    
+                                </div>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>
-    <!-- </header> -->
+    </header>
     <!-- Footer-->
     <footer class="bg-light py-1">
         <div class="container px-4 px-lg-5">
