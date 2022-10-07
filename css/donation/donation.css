@@ -18,12 +18,13 @@
 }
 
 .title {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0.2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .ps {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -44,14 +45,16 @@ a {
     border-radius: 10px;
     /* padding:0.6rem; */
     width: 50rem;
-    height: 35rem;
+    height: 41.5rem;
     overflow: hidden;
     max-width: 100vw;
-    height: 70vh;
+    max-height: 75vh;
 }
 
 .choose_border form {
-    background: aquamarine;
+    /* background: aquamarine; */
+    background-image: url(/image/donation/temple1_01.jpg);
+    background-size:cover;
     display: flex;
     flex-direction: column;
     padding: 0 1.8rem;
@@ -69,7 +72,7 @@ a {
     text-align: center;
     line-height: 2.5rem;
     font-size: 1rem;
-    margin: 5vh;
+    margin: 3vh;
 }
 
 #Payment2 {
@@ -78,13 +81,16 @@ a {
     width: 100%;
     height: 5vh;
     font-size: 1rem;
-    margin: 5vh;
+    margin: 3vh;
     outline: none;
 }
 
 
 .Payment_border form {
-    background: aquamarine;
+    /* background: aquamarine; */
+    background-image: url(/image/donation/temple2_02.jpg);
+    background-size:cover;
+    /* background-size可以將背景圖片的大小放大至容器大小並填滿 */
     display: flex;
     flex-direction: column;
     padding: 0 5rem;
@@ -97,9 +103,11 @@ a {
 .form-contol {
     width: 100%;
     height: 2.2rem;
+    border-radius: 0.2rem;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: none;
     outline: none;
     margin: 0.6rem;
 }
@@ -111,8 +119,8 @@ a {
 
 button.ghost {
     background: transparent;
-    border-color: #fff;
-    border: 1px solid #fff;
+    /* border-color: #fff; */
+    /* border: 1px solid #fff; */
     outline: none;
     width: 5rem;
     border-radius: 1rem;
@@ -120,7 +128,7 @@ button.ghost {
     /* 轉變 ease-in緩入 */
     margin: 0.6rem 0;
     padding: 0.5rem 0;
-    color: #fff;
+    /* color: #fff; */
     font-size: 0.6rem;
 }
 
@@ -159,14 +167,15 @@ button.ghost:active {
 }
 
 .overlay {
-    background-color: #417dff;
-    background-image: url(/image/donation/templemicrify.jpg);
+    /* background-color: #417dff; */
+    background-image: url(/image/donation/temple3.jpg);
+    background-size:cover;
     width: 200%;
     height: 100%;
     position: relative;
     left: -100%;
     transition: all 0.6s ease-in-out;
-    color: white;
+    /* color: white; */
 }
 
 .overlay_border {

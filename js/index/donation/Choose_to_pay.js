@@ -10,10 +10,10 @@ ATMtransfer.addEventListener('click',function(){
 })
 
 //右邊開關
-signUpButton.addEventListener('click',function(){
-    all_border.classList.add('right-panel-active')
-    console.log("no");
-})
+// signUpButton.addEventListener('click',function(){
+//     all_border.classList.add('right-panel-active')
+//     console.log("no");
+// })
 
 //左邊開關
 signInButton.addEventListener('click',function(){

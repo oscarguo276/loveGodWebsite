@@ -55,6 +55,7 @@ validate.addEventListener("click",function(){
 	} 
 	else { //輸入正確時 
 		alert("^-^"); //彈出^-^ 
+    window.location.href="../pages/donationtest/dona.html"
     createCode();//重新整理驗證碼
     document.getElementById("Check").value = "";//清空文字框 
 	} 
